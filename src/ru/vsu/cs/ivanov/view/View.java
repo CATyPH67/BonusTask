@@ -211,6 +211,7 @@ public class View {
         removeRowItem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                table.getRowSorter().setSortKeys(null);
                 int indexRow = table.getSelectedRow();
                 if (indexRow >= 0) {
                     model.removeRow(indexRow);
