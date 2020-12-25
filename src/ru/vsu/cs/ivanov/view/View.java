@@ -49,9 +49,6 @@ public class View {
 
         JMenu fileMenu = new  JMenu("Menu");
 
-        JMenuItem showChartItem = new JMenuItem("Show chart");
-        fileMenu.add(showChartItem);
-
         JMenuItem saveChartItem = new JMenuItem("Save");
         fileMenu.add(saveChartItem);
         saveChartItem.addActionListener (new ActionListener() {
